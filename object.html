@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      // constructor function : uppercase
+      function Person(firstName, lastName) {
+        this.firstName = firstName; // property dalam const function
+        this.lastName = lastName;
+        this.sayHello = function (name) {
+          // method
+          console.log(`Hello ${name}, my name is ${this.firstName} `);
+        };
+      }
+
+      // object : menggunakan kata kunci new
+
+      const arum = new Person('arum', 'zattayu');
+      // arum.firstName = 'Arum';
+      // arum.lastName = 'Zattayu';
+      arum.sayHello('dias');
+
+      const ningrum = new Person('zattayu', 'ningrum');
+      // ningrum.firstName = 'zattayu';
+      // ningrum.lastName = 'ningrum';
+      ningrum.sayHello('dinar');
+
+      console.log(arum);
+      console.log(ningrum);
+    </script>
+  </body>
+</html>

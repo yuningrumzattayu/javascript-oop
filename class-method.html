@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Method</title>
+  </head>
+  <body>
+    <script>
+      // class method sebaiknya ditambahkan ke prototype bukan instance object
+      class Person {
+        constructor(name) {
+          this.name = name;
+        }
+
+        sayHello(name) {
+          console.info(`helo ${name} my name is ${this.name}`);
+        }
+      }
+
+      const arum = new Person('Arum');
+      console.info(arum);
+      arum.sayHello('dina');
+
+      const ningrum = new Person('Ningrum');
+      console.info(ningrum);
+      ningrum.sayHello('dina');
+    </script>
+  </body>
+</html>

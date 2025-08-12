@@ -1,0 +1,21 @@
+class adalah blueprint, atau cetakan untuk membuat object
+berisi deklarasi semua properties dan functions yang dimiliki object
+setiap object selalu dibuat dari class
+sebuah class bisa membuat object tanpa batas
+object idealnya dibuat melalui class
+
+class dapat membuat object berkali2 dengan karakteristik yang sama
+
+prtotype :
+tiap kali kita membuat constructur function person itu sama saja dengan membuat person.prototype
+
+nanti tiap person prototype mewariskan ke instance object
+dan selanjutnya ke object prototype
+
+cara kerja prototype : ia akan mencari ke instance object terlebih dahulu, jika tidak ada makan akan mencari ke prototypr
+jika tidak ada juga maka akan mencari ke prototype object, jika tidak ada akan error
+
+ia mencari dari bawah ke atas
+instance object -> prototype -> prototype object
+
+
