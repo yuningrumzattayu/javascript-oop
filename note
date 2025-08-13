@@ -18,4 +18,6 @@ jika tidak ada juga maka akan mencari ke prototype object, jika tidak ada akan e
 ia mencari dari bawah ke atas
 instance object -> prototype -> prototype object
 
+getter dan setter adanya di prototype bukan di instance object
+
 
