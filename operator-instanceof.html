@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Instanceof</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+
+      class Manager extends Employee {}
+
+      // mengecek instance object milik siapa
+
+      const arum = new Employee();
+      const ningrum = new Manager();
+
+      console.info(arum instanceof Employee); // true
+      console.info(arum instanceof Manager); // false
+
+      console.info(ningrum instanceof Employee); // true
+      console.info(ningrum instanceof Manager); // true
+    </script>
+  </body>
+</html>
